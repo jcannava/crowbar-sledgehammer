@@ -10,7 +10,7 @@ repo --name=a-updates --baseurl=http://mirror.centos.org/centos/5/updates/$basea
 repo --name=a-extras  --baseurl=http://mirror.centos.org/centos/5/extras/$basearch
 repo --name=a-epel    --baseurl=http://mirror.pnl.gov/epel/5/$basearch
 repo --name=a-live    --baseurl=http://www.nanotechnologies.qc.ca/propos/linux/centos-live/$basearch/live
-repo --name=a-rbel    --baseurl=http://rbel.frameos.org/stable/el5/$basearch
+repo --name=a-rbel    --baseurl=http://rbel.frameos.org/stable/el5/$basearch 
 
 %packages
 bash
@@ -52,7 +52,8 @@ libsysfs.i386
 yum
 curl
 ruby
-ruby-devel
+ruby-libs.x86_64
+ruby-devel.x86_64
 ruby-ri
 ruby-rdoc
 rubygems
